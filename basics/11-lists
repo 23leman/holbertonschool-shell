@@ -1,4 +1,11 @@
 #!/bin/bash
+# List all files (including hidden) in current dir, parent dir, and /boot in long format
+
+# Current directory
 ls -la .
+
+# Parent directory
 ls -la ..
-ls -la /boot
+
+# /boot directory
+ls -la /boot 2>/dev/null
